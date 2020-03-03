@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var geboortejaar = prompt('Geef je geboortejaar in', '1979');
+        var hoeOud = prompt('Hoe oud denk je te worden?', '81');
+        var koffie = prompt('Hoeveel tassen koffie drink je per dag?', '2');
+
+        var vandaag = new Date();
+        var jaar = vandaag.getFullYear();
+        console.log(jaar);
+
+        var ouderdom = (jaar - geboortejaar);
+        var koffieTotaal = koffie * 365 * ouderdom;
+        console.log(ouderdom);
+
+        document.write('Je bent nu ' + ouderdom + '. Aan ' + koffie + ' koppen koffie per dag zal je ' + koffieTotaal + ' koppen koffie drinken als je ' + hoeOud + ' jaar oud zal worden.');
+    </script>
+</body>
+
+</html>
