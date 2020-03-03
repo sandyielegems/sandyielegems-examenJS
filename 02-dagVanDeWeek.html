@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var vandaag = new Date();
+
+        var weekdag = new Array('zondag', 'maandag', 'dinsdag', 'woensdag', 'donderdag', 'vrijdag', 'zaterag');
+        console.log(weekdag);
+        var dag = weekdag[vandaag.getDay()];
+        document.write('Vandaag is ' + dag + '.');
+
+        if (dag == 'zaterdag' || dag == 'zondag') {
+            document.write('<br>Het is weekend, even bekomen.');
+        } else {
+            document.write('<br>Het is een werkdag, aan de slag dus.');
+        }
+    </script>
+</body>
+
+</html>
